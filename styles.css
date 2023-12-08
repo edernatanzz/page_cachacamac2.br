@@ -1,0 +1,402 @@
+*{
+    font-family: 'Cormorant Garamond', serif;
+
+    color: white;
+    text-decoration: none;
+}
+a {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+body {
+        background-image: url('imgs/repeating-triangles.svg'); /* Substitua com o caminho real para sua imagem */
+        background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
+        background-repeat: no-repeat; /* Evita a repetição da imagem */
+        background-attachment: fixed; /* Fixa a imagem de fundo, para que ela não role com a página */
+        color: white;
+        
+    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+   
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+#products-list {
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.product {
+    border: 1px solid #dddddd50;
+    box-shadow: 0 0 8px 1.5px rgba(255, 255, 255, 0.411);
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 300px;
+    text-align: center;
+    background-color: #01250e;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-title {
+/* font-weight: bold;*/
+    margin: 0.5rem 0;
+}
+
+.product-price {
+    color: #d00;
+}
+/* descrição */
+.product-description {
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+/* ----------------------*/ 
+
+/* Nav Bar da pagina */
+
+/* ... (outros estilos) */
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding: 1rem;
+}
+
+.logo {
+    flex: 1; /* Expande para ocupar o espaço restante no navbar */
+    display: flex;
+    align-items: start;
+    justify-content: start; /* Centraliza horizontalmente */
+}
+
+.logo a {
+    display: block; /* Ocupa todo o espaço disponível na largura */
+}
+
+.logo img {
+    width: 40px; /* Ajuste o tamanho do logo conforme necessário */
+    height: auto;
+}
+
+/* ... (estilos do resto do CSS) */
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
+    background-color: #fff;
+    transition: background-color 0.3s;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #d00;
+}
+
+/* Media Query para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+        height: 100%; /* Ajuste para preencher completamente a tela */
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+    #products-list{
+        width: 400px;
+    height: auto;
+    }
+}
+
+
+/* /-----------------SLIDER PRINCIPAL */ 
+
+
+/* ---------------------------------------------------------- #04*/
+        /* ... (seletores iniciais) */
+
+/* Estilos do Slider Principal *//* Estilos do Slider Principal */
+
+.slider-principal {
+    position: relative;
+    margin-top: 80px; /* Altura da barra de navegação */
+}
+
+.slider-principal img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.slick-prev,
+.slick-next {
+    font-size: 0;
+    border: none;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slick-prev {
+    background-image: url(imgs/slider-principal/setas/bx-chevron-left.svg);
+    left: 0;
+}
+
+.slick-next {
+    background-image: url(imgs/slider-principal/setas/bx-chevron-right.svg);
+    right: 0;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slick-dots li button {
+    font-size: 0;
+    border: 5px solid white;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.slick-dots li.slick-active button {
+    background: #00bac6;
+}
+
+/* ... (outros ajustes responsivos) */
+/* ... (outros ajustes responsivos) */
+
+  
+  /* Estilos para o cabeçalho h3 */
+
+
+
+/* conteudo  */
+/* nao beba*/ 
+
+
+
+
+
+
+
+.content-message {
+   /* background-color: #f9f9f9;*/
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+.content-message p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+.content {
+    /*background-color:hsl(142, 18%, 70%);*/
+    padding: 2rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Defina uma altura mínima para a centralização */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+
+/* .botao comprar */
+
+.buy-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #058d37;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    
+}
+
+.buy-button:hover {
+    transform: scale(1.1);
+}
+
+/* */
+/* ... Footer  */
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+footer {
+    background-color: transparent;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #d00;
+} 
+
+/*estilizaçao footer */
+footer {
+    
+    color: #fff;
+    padding: -1rem 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #d00;
+}
+
+.footer-disclaimers {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.footer-disclaimers p {
+    font-size: 0.85rem;
+    margin: 0.5rem 0;
+}
+
+
+  /*tamanho da imagem do slider*/
+  .carousel-item img {
+    width: auto;
+    height: auto;
+}
+
+.featurette-heading .text-muted {
+    color: initial; /* Volta à cor padrão (caso tenha sido definida anteriormente) */
+ }
+ 
+ .featurette-heading .text-muted {
+    color: #25d366 !important; /* Define a cor verde (#25d366) para o texto com a classe text-muted */
+ }
+ 
+
+
+.spacing-arround{
+    margin-top: -50px;
+}
+
+.spacing{
+    height: 100px;
+}
